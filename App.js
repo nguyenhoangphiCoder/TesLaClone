@@ -1,15 +1,12 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
-import CarItem from "./components/CarItem";
+import { StyleSheet, View } from "react-native";
+import Header from "./components/Header";
+import CarsList from "./components/CarsList";
 export default function App() {
   return (
     <View style={styles.container}>
-      <CarItem
-        name={"Model X"}
-        tagline={"Order online for"}
-        taglineCTA={"Touchless Delivery"}
-        image={require("./assets/images/Model3.jpeg")}
-      />
+      <Header />
+      <CarsList />
       <StatusBar style="auto" />
     </View>
   );
